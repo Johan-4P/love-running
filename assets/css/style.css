@@ -1,21 +1,21 @@
-/*Google fonts import */
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
-/*Asterisk wildcard selector to override default added by the browser*/
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* General style*/
+/* General styles */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
-    font-family: 'Lato', sans-serif ;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Header */
@@ -34,22 +34,19 @@ header {
 header a {
     text-decoration: none;
     color: inherit;
-
 }
 
 h1 {
-    font-family: 'Oswald' sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
-
 }
 
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
-    
 }
 
 #menu > li {
@@ -60,19 +57,19 @@ h1 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* Navbar styles whit dropdown toggle */
+/* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
     background-color: #ffffff;
-    padding: 0 1rem;
     width: 100%;
     left: 0;
+    padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
 }
 
-/* Nav toggel*/
+/* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -85,10 +82,10 @@ nav {
     font-size: 2rem;
 }
 
-/* Main content*/
+/* Main content */
 main {
     background-color: lightblue;
-    /*Make main element take up any surplus space to push footer down */
+    /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
 }
@@ -102,8 +99,14 @@ main {
     list-style-type: none;
 }
 
-/* Media query*/
-@media screen and (min-width:760px) {
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
     /* Header */
     nav {
         display: block;
@@ -127,7 +130,7 @@ main {
 
     #logo {
         font-size: 280%;
-        line-height: 75px; 
+        line-height: 75px;
         margin: 0 0.5rem;
     }
 
@@ -138,9 +141,9 @@ main {
     }
 }
 
-/* Large divices (laptops and desktops, 992px and up) */
-@media screen and (min-width:992px) {
-    #menu a:hover {
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
     }
 }
